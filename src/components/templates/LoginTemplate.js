@@ -1,4 +1,4 @@
-import { Button, Input, Heading } from '@chakra-ui/react'
+import { Button, Input, Heading, Container } from '@chakra-ui/react'
 import { useState } from 'react'
 import axios from 'axios'
 
@@ -16,6 +16,7 @@ const LoginTemplate = () => {
   }
   return (<>
     <Heading>Join ComEth</Heading>
+    <Container>
     <Input
       placeholder="username"
       value={username}
@@ -26,7 +27,8 @@ const LoginTemplate = () => {
       value={password}
       onChange={(e) => setPassword(e.target.value)}
     />
-    <Button onClick={handleLogin}>Login</Button></>);
+    <Button onClick={handleLogin}>Login</Button>
+    </Container></>);
 }
 export default LoginTemplate;
 
