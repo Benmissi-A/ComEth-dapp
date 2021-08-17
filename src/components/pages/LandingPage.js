@@ -1,8 +1,9 @@
-import {Heading } from "@chakra-ui/react";
+
+import LandingPageTemplate from "../templates/LandingPageTemplate";
 const LandingPage = () => {
   return (
     <>
-      <Heading>Landing</Heading>
+      <LandingPageTemplate />
     </>
   );
 };
