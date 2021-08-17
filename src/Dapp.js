@@ -9,9 +9,6 @@ import Login from "./components/pages/Login";
 const Dapp = () => {
     return (
       <>
-        <LandingPage />
-
-        <Link to="/"></Link>
         <Link to="/create">
           <Button colorScheme="blue">Create</Button>
         </Link>
@@ -22,7 +19,7 @@ const Dapp = () => {
 
         <Switch>
           <Route exact path="/" component={LandingPage}>
-            <Create />
+            <LandingPage />
           </Route>
 
           <Route exact path="/Create" component={Create}>
