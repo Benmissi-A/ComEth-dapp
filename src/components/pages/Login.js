@@ -1,5 +1,5 @@
-import { Heading } from "@chakra-ui/react";
+import LoginTemplate from "../templates/LoginTemplate";
 const Login = () => {
-  return <Heading>Login</Heading>;
+  return <LoginTemplate />;
 };
 export default Login;

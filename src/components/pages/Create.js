@@ -1,5 +1,5 @@
-import { Heading } from "@chakra-ui/react";
+import CreateTemplate from "../templates/CreateTemplate"
 const Create = () => {
-  return <Heading>Create</Heading>;
-};
-export default Create;
+  return <CreateTemplate />
+}
+export default Create
