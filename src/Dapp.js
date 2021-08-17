@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import LandingPage from './components/pages/LandingPage';
 import Create from "./components/pages/Create";
 import Login from "./components/pages/Login";
@@ -15,6 +15,7 @@ import People from "./components/pages/People";
 const Dapp = () => {
     return (
       <>
+      <Link to="/home">Logo</Link>
         <Switch>
           <Route exact path="/" component={LandingPage}>
             <LandingPage />
