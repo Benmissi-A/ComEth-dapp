@@ -2,16 +2,16 @@
 import React from "react";
 import Dapp from "./Dapp";
 import { useContract } from "web3-hooks";
-import { FaucetAddress, FaucetAbi } from "./contracts/faucet";
+import { ComEthFactoryAdress, ComEthFactoryAbi } from "./contracts/comEthFactory";
 
 export const FaucetContext = React.createContext(null);
 
 function App() {
-  const faucet = useContract(FaucetAddress, FaucetAbi);
+  const comEthFactory = useContract(ComEthFactoryAdress, ComEthFactoryAbi);
 
   return (
     <>
-      <FaucetContext.Provider value={faucet}>
+      <FaucetContext.Provider value={comEthFactory}>
         <Dapp />
       </FaucetContext.Provider>
     </>

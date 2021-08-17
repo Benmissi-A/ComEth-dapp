@@ -1,4 +1,5 @@
+import { Heading } from "@chakra-ui/react";
 const Create = () => {
-  return null;
-}
-export default Create
+  return <Heading>Create</Heading>;
+};
+export default Create;

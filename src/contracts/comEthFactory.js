@@ -1,5 +1,5 @@
-comEthFactoryContract = "0xBf02E0D1A6c23BB14800e50390791a6792c93139";
-comEthFactoryAbi = [
+export const ComEthFactoryAdress = "0xBf02E0D1A6c23BB14800e50390791a6792c93139";
+export const ComEthFactoryAbi = [
   {
     inputs: [
       {

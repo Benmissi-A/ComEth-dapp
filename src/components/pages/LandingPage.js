@@ -1,10 +1,8 @@
-import { Button, ButtonGroup } from "@chakra-ui/react";
-
+import {Heading } from "@chakra-ui/react";
 const LandingPage = () => {
   return (
     <>
-      <Button colorScheme="blue">Create</Button>
-      <Button colorScheme="blue">Join</Button>
+      <Heading>Landing</Heading>
     </>
   );
 };
