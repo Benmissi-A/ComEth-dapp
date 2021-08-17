@@ -1,6 +1,5 @@
 import { Button, Input, Heading } from '@chakra-ui/react'
 import { useState } from 'react'
-import axios from 'axios'
 
 const CreateTemplate = () => {
   const [username, setUsername] = useState('')
@@ -13,12 +12,14 @@ const CreateTemplate = () => {
   <Heading>Create ComEth</Heading>
   <Input
         placeholder="username"
+        width="sm"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
       <Input
         placeholder="password"
         value={password}
+        width="sm"
         onChange={(e) => setPassword(e.target.value)}
       />
       <Button onClick={handleCreate}>Create your account</Button>
