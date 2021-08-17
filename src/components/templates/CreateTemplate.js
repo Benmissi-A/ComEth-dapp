@@ -1,4 +1,4 @@
-import { Button, Input, Heading } from "@chakra-ui/react";
+import { Button, Input, Heading, Container } from '@chakra-ui/react'
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -13,11 +13,13 @@ const CreateTemplate = () => {
   return (
     <>
       <Heading>Create ComEth</Heading>
+      <Container >
       <Input
         placeholder="username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
+
       <Input
         placeholder="password"
         value={password}
@@ -26,7 +28,9 @@ const CreateTemplate = () => {
       <Link to="/home">
         <Button onClick={handleCreate}>Login</Button>
       </Link>
+      <Button onClick={handleCreate}>Create your account</Button>
+    </Container>
     </>
-  );
-};
-export default CreateTemplate;
+  )
+}
+export default CreateTemplate
