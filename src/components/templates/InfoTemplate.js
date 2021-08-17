@@ -13,7 +13,7 @@ const InfoTemplate = () => {
         <Button>Budget</Button>
       </Link>
       <Link to="/people">
-        <Button>Info</Button>
+        <Button>People</Button>
       </Link>
       <Link to="/home">
         <Button>Home</Button>

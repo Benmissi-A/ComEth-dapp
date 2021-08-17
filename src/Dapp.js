@@ -46,7 +46,7 @@ const Dapp = () => {
             <Budget />
           </Route>
           <Route exact path="/People" component={People}>
-            <Stats />
+            <People />
           </Route>
         </Switch>
       </>

@@ -26,9 +26,8 @@ const CreateTemplate = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <Link to="/home">
-        <Button onClick={handleCreate}>Login</Button>
+      <Button onClick={handleCreate}>Create your account</Button> 
       </Link>
-      <Button onClick={handleCreate}>Create your account</Button>
     </Container>
     </>
   )

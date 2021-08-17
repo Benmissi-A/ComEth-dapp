@@ -1,8 +1,9 @@
 import { Heading } from "@chakra-ui/react";
+import StatsTemplate from "../templates/StatsTemplate"
 
 const Stats = () => {
   return(<>
-  <Heading>Stats</Heading>
+  <StatsTemplate />
   </>)
 }
 export default Stats

@@ -33,7 +33,7 @@ const LoginTemplate = () => {
       //value={password}
       //onChange={(e) => setPasword(e.target.value)}
     />
-    <Button onClick={handleLogin}>Join Community</Button>
+    
     </Container> 
           <Input
             placeholder="password"
@@ -42,7 +42,7 @@ const LoginTemplate = () => {
           />
     
           <Link to="/home">
-            <Button onClick={handleLogin}>Login</Button>
+            <Button onClick={handleLogin}>Join Community</Button>
           </Link>
         </>
       );
