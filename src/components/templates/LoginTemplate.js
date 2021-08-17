@@ -20,7 +20,7 @@ const LoginTemplate = () => {
       //value={password}
       //onChange={(e) => setPasword(e.target.value)}
     />
-    <Button onClick={handleLogin}>Login</Button>
+    <Button onClick={handleLogin}>Join Community</Button>
     </Container></>);
   
 }
