@@ -1,4 +1,4 @@
-import BudgeTemplate from "../templates/BudgetTemplate"
+import BudgetTemplate from "../templates/BudgetTemplate"
 
 const Budget = () => {
   return (<><BudgetTemplate /></>)

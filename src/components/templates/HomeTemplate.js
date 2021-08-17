@@ -11,8 +11,8 @@ const HomeTemplate = () => {
       <Link to="/proposition">
         <Button>Propositions</Button>
       </Link>
-      <Link to="/stats">
-        <Button>Stats</Button>
+      <Link to="/info">
+        <Button>Info</Button>
       </Link>
     </>
   );
