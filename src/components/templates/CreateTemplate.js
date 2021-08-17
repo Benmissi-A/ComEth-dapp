@@ -6,12 +6,8 @@ const CreateTemplate = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
-  const handleLogin = async () => {
-    const res = await axios.post('http://192.168.0.10:3333', {
-      username: username,
-      hash: password,
-    })
-    console.log(res)
+  const handleCreate = async () => {
+    //a créer  <-------
   }
   return (<>
   <Heading>Create ComEth</Heading>
@@ -25,7 +21,7 @@ const CreateTemplate = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <Button onClick={handleLogin}>Login</Button>
+      <Button onClick={handleCreate}>Login</Button>
   </>)
 }
 export default CreateTemplate
