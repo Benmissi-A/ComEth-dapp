@@ -1,32 +1,38 @@
-import { Button, Input, Heading } from '@chakra-ui/react'
-import { useState } from 'react'
-import axios from 'axios'
-
+import { Button, Input, Heading } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 
 const LoginTemplate = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    const res = await axios.post('http://192.168.0.10:3333', {
+    const res = await axios.post("http://192.168.0.10:3333", {
       username: username,
       hash: password,
-    })
-    console.log(res)
-  }
-  return (<>
-    <Heading>Join ComEth</Heading>
-    <Input
-      placeholder="username"
-      value={username}
-      onChange={(e) => setUsername(e.target.value)}
-    />
-    <Input
-      placeholder="password"
-      value={password}
-      onChange={(e) => setPassword(e.target.value)}
-    />
-    <Button onClick={handleLogin}>Login</Button></>);
-}
-export default LoginTemplate;
+    });
+    console.log(res);
+  };
+  return (
+    <>
+      <Heading>Join ComEth</Heading>
+      <Input
+        placeholder="username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
 
+      <Input
+        placeholder="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+
+      <Link to="/home">
+        <Button onClick={handleLogin}>Login</Button>
+      </Link>
+    </>
+  );
+};
+export default LoginTemplate;
