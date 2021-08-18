@@ -8,6 +8,9 @@ const PeopleTemplate = () => {
       <Link to="/home">
         <Button>Home</Button>
       </Link>
+      <Link to="/info">
+        <Button>Info</Button>
+      </Link>
     </>
   );
 };
