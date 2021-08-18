@@ -1,10 +1,7 @@
-import {Heading, Link, Button} from "@chakra-ui/react"
+import {Heading} from "@chakra-ui/react"
 
 const PropositionTemplate = () => {
   return ( <>
-  <Heading>Make Propositions</Heading>
-  <Link to="/home">
-        <Button>Home</Button>
-      </Link></>)
+  <Heading>Make Propositions</Heading></>)
 }
 export default PropositionTemplate;
